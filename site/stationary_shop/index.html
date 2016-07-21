@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>架空の文房具商店- stationery shop SAMPLE</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css" media="screen"/>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?language=ja&sensor=false"></script>
+  <script src="js/map.js"></script>
+  <script src="js/stationary.js"></script>
+
+</head>
+<body>
+  <!-- ナビゲーション -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+      <!--ブランド名 ロゴ名の表示-->
+      <a href="#top" class="navbar-brand">架空の文房具商店 - stationary shop SAMPLE</a>
+      <!--トグルボタンの設置-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-content">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="nav-content" class="collapse navbar-collapse">
+      <!--リンクのリスト メニューリスト-->
+      <ul class="nav navbar-nav">
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#items">こだわりの文房具</a></li>
+        <li><a href="#inquiry">お問い合わせ</a></li>
+        <li><a href="#company">会社案内</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ナビゲーションここまで -->
+  <!-- ヘッダ -->
+  <header class="jumbotron" id="top">
+    <div class="container">
+      <h1 class="text">こだわりの文房具</h1>
+      <p class="textsmall">店主が選び抜いた文房具を販売しております。</p>
+        <a class="fancybox-galleryBox btn btn-primary btn-lg" href="images/top_02.jpg" title="お店の外観" data-fancybox-group="gallery">
+          詳しく見る
+        </a>
+        <div class="hidden">
+          <a class="fancybox-galleryBox" href="images/top_03.jpg" title="海外のメモパッド" data-fancybox-group="gallery"></a>
+          <a class="fancybox-galleryBox" href="images/top_04.jpg" title="ディスプレイコーナー" data-fancybox-group="gallery"></a>
+          <a class="fancybox-galleryBox" href="images/top_05.jpg" title="皮革製品" data-fancybox-group="gallery"></a>
+        </div>
+    </div>
+  </header>
+  <!-- ヘッダここまで-->
+  <!-- メインエリア -->
+  <div id="main">
+    <div class="container new-content">
+      <div class="row">
+        <div class="col-md-8 content-area">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">新着情報</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <time datetime="2015-04-20">2015年04月20日</time>新商品が入荷しました。
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-04-15">2015年04月15日</time>新学期フェア開催中です。
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-03-31">2015年03月31日</time>決算セール今日まで！
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-03-15">2015年03月15日</time>決算セール開催決定！
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-01-01">2015年01月01日</time>ここに新着情報が入ります。
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-01-01">2015年01月01日</time>ここに新着情報が入ります。
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-01-01">2015年01月01日</time>ここに新着情報が入ります。
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-01-01">2015年01月01日</time>ここに新着情報が入ります。
+                </li>
+                <li class="list-group-item">
+                  <time datetime="2015-01-01">2015年01月01日</time>ここに新着情報が入ります。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">          
+            <div id="banner_area">
+              <div class="col-sm-4 content-area img-responsive">
+                <a href="#">
+                  <article id="banner1" class="banner">
+                    <h4>一生モノ。</h4>
+                    <p class="description">万年筆展示販売会<br>6月5日より開催</p>
+                  </article>
+                </a>
+              </div>
+              <div class="col-sm-4 content-area img-responsive">
+                <a href="#">
+                  <article id="banner2" class="banner">
+                    <p class="description">色鉛筆を使用した</p>
+                    <h4>水彩画教室</h4>
+                  </article>
+                </a>
+              </div>
+              <div class="col-sm-4 content-area img-responsive">
+                <a href="#">
+                  <article id="banner3" class="banner">
+                    <h4>scissors<br>collection</h4>
+                    <p class="description">Made in Japan 新潟県燕市</p>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+       </div><!--/.content-area-->
+        <div class="col-md-4 sidebar">
+          <aside>
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title">送料無料!!</h3>
+              </div>
+              <div class="panel-body">
+                当店とお取引のあるお客様は、午前中にまでにFAXでご注文を頂ければ、当日中に無料にて配送いたします。
+              </div>
+            </div>
+          </aside>
+          <aside>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Follow me!</h3>
+              </div>
+              <div class="panel-body clearfix">
+                <p>日々の情報を発信しています。</p>
+                <a class="twitter-timeline"  href="https://twitter.com/TwitterDevJP" data-widget-id="609191197215555585">@TwitterDevJPのツイート</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
+            </div>
+          </aside>
+        </div><!--/.sidebar-->
+      </div>
+    </div>
+
+    <div id="items" class="anchor">
+      <div class="panel panel-default" id="items_info">
+        <div class="panel-heading"><h2>こだわりの文房具</h2></div>
+        <div class="panel-body">
+          <div class="container" id="gallery">
+            <div class="row items_row">
+              <div class="col-md-4">
+                <figure>
+                  <img src="images/item_01.jpg" alt="黒革システム手帳" class="img-responsive">
+                  <figcaption>
+                    <p class="title">システム手帳</p>
+                    <p>
+                      選び抜かれた高品質な革を職人が丹念に仕上げた、丈夫で機能的なシステム手帳です。<br>
+                      バイブルサイズは、どなたにもお使いいただけるスタンダードな大きさ。<br>
+                      美しさと耐久性を兼ね備えた本品は、長く使える最高のパートナーとなるでしょう。<br>
+                    </p>
+                    <p>
+                      サイズ：164mm×232mm×22mm 重量：502g
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>  
+              <div class="col-md-4">
+                <figure>
+                  <img src="images/item_02.jpg" alt="地球儀" class="img-responsive">
+                  <figcaption>
+                    <p class="title">地球儀</p>
+                    <p>
+                      地球儀というと、何の変哲もない商品のように思われがちですが、新しい作成法、新しいデザインを得て、非常に興味深い、おしゃれでインテリア性の高い商品になりました。
+                    </p>
+                    <p>
+                      サイズ：30.5cm/4200万分の1 重量：1.4kg
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-4">
+                <figure>
+                  <img src="images/item_03.jpg" alt="色鉛筆" class="img-responsive">
+                  <figcaption>
+                    <p class="title">水彩色鉛筆</p>
+                    <p>
+                      発色の良い水彩画用の色鉛筆です。<br>
+                    </p>
+                    <p>
+                      全12色
+                    </p>
+                  </figcaption>
+                </figure> 
+              </div>
+            </div>
+            <div class="row items_row">
+              <div class="col-md-4">
+                <figure>
+                  <img src="images/item_04.jpg" alt="メモ帳" class="img-responsive">
+                  <figcaption>
+                    <p class="title">メモ帳</p>
+                    <p>
+                      アウトドアにもぴったりの防水表紙のメモ帳です。
+                    </p>
+                    <p>
+                      全5色
+                    </p>
+                  </figcaption>
+                </figure> 
+              </div>
+              <div class="col-md-4">
+                <figure>
+                  <img src="images/item_05.jpg" alt="カラフルなクリップ" class="img-responsive">
+                  <figcaption>
+                    <p class="title">Colerful Paper Clips</p>
+                    <p>
+                      カラフルなクリップです。
+                    </p>
+                    <p>
+                      50g入り
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-4">
+                <figure>
+                  <img src="images/item_06.jpg" alt="松の木があしらわれたノート" class="img-responsive">
+                  <figcaption>
+                    <p class="title">松の木のノート</p>
+                    <p>
+                      松の木があしらわれたクラシックなノートです。。
+                    </p>
+                    <p>
+                      250mm×200mm
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <p class="see_more"><a href="#">もっと見る</a></p>  
+        </div>
+      </div>
+    </div>
+
+    <div id="inquiry" class="anchor">
+      <div class="container">
+        <div class="panel panel-primary" id="inquiry_info">
+          <div class="panel-heading">
+            <h2 class="panel-title">お問い合わせ</h2>
+          </div>
+          <div class="panel-body well">
+            <form class="form-horizontal" action="#" >
+              <fieldset>
+                <legend>お問い合わせ</legend>
+                <p>
+                  商品に関するご質問や、ご意見、ご希望など、なんでもお気軽にご連絡下さい。<br>
+                  「お名前」、「メールアドレス」、「ご質問・ご意見・ご希望」とも、全て必須事項ですので、ご記入宜しくお願いします。
+                </p>
+                <div class="form-group">
+                  <label for="name" class="col-lg-2 control-label">お名前</label>
+                  <div class="col-lg-10">
+                    <input class="form-control" id="name" placeholder="架空 花子" type="text" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="col-lg-2 control-label">メールアドレス</label>
+                  <div class="col-lg-10">
+                    <input class="form-control" id="email" placeholder="aaa@bbb.ccc" type="text" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">お問い合わせの種類</label>
+                  <div class="col-lg-10">
+                    <div class="radio">
+                      <label>
+                        <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                        商品構成・内容
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                        無料配達サービス
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input name="optionsRadios" id="optionsRadios3" value="option3" type="radio">
+                        その他
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="textArea" class="col-lg-2 control-label">ご質問、ご意見、ご希望など</label>
+                  <div class="col-lg-10">
+                    <textarea class="form-control" rows="3" id="textArea" required></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-10 col-lg-offset-2">
+                    <button type="reset" class="btn btn-default">キャンセル</button>
+                    <button type="submit" class="btn btn-primary">確認</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- main -->
+  <!-- メインエリアここまで -->
+  <!-- フッタ -->
+  <footer>
+    <div id="company" class="container anchor">
+      <h4>会社概要</h4>
+      <address>〒123-xxxx<br>東京都千代田区丸の内1丁目<br>TEL：03-0000-0000&nbsp;FAX：03-0000-0000</address>
+      <div id="map-canvas" class="img-responsive"></div>
+      <div id="copyright">
+        <small class="text-muted">
+          <script>
+            now = new Date();
+            nowyear = now.getFullYear();
+            document.write("Copyright&copy; 2010 - " + nowyear );
+          </script>
+          <a href="#top">Stationary SAMPLE</a> All Rights Reserved.
+        </small>
+      </div>
+    </div>
+  </footer>
+  <!-- フッタここまで -->
+</body>
+</html>
+
+
